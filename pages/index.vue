@@ -37,7 +37,7 @@ export default {
 
   created() {
     this.$axios
-      .get("https://admindash.comcitybd.com/api/brand/Remax/0")
+      .get("http://test.comcitybd.com/api/brand/Remax/0")
       .then((res) => {
         console.log(res.data);
         this.products = res.data.data;

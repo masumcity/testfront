@@ -43,10 +43,11 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: "http://test.comcitybd.com",
-    proxyHeaders: true,
-    credentials: false,
-    proxy: false,
+    proxy:true
+  },
+
+  proxy: {
+    '/api/': 'http://test.comcitybd.com'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

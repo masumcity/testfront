@@ -37,7 +37,7 @@ export default {
 
   created() {
     this.$axios
-      .get("/api/brand/Remax/0")
+      .get("/api/brand/Remax")
       .then((res) => {
         console.log(res.data);
         this.products = res.data.data;
